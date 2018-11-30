@@ -1,0 +1,15 @@
+#user{
+	float: left;
+	text-align: left;
+	min-width: 10%;
+	max-width: 60%;
+	margin-left: 15px;
+}
+
+#admin{
+	float: right;
+	text-align: right;
+	min-width: 10%;
+	max-width: 60%;
+	margin-right: 15px;
+}
