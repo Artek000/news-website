@@ -6,8 +6,8 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -18,7 +18,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -103,6 +103,7 @@ pre {
 	width: 100%;
 	position: relative;
 	display: table;
+	font-size: 1em;
 }
 
 .head-menu li{
@@ -196,7 +197,7 @@ pre {
 	float: left;
 	position: relative;
 	width: 100%;
-	height: auto;	
+	height: auto;
 	padding-top: 15px;
 	margin-right:0px;
 }
@@ -205,7 +206,7 @@ pre {
 	float: left;
 	position: relative;
 	width: 100%;
-	height: auto;	
+	height: auto;
 	padding-top: 15px;
 	margin-right:0px;
 }
@@ -225,6 +226,12 @@ pre {
 	border-top: 5px solid #f1c40f;
 	border-bottom: 5px solid #f1c40f;
 	margin-bottom: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+}
+
+.mid-text>img{
+	width: 100%;
 }
 
 .mid-text p{
@@ -292,26 +299,26 @@ pre {
 
 .user-menu {
 	float: left;
-	font-family: Courier; 
-	font-weight: bold; 
+	font-family: Courier;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 	border-radius: 5px;
 	margin: 0 auto;
-	
+
 }
 
 .user-menu a{
-	font-family: Courier; 
-	font-weight: bold; 
+	font-family: Courier;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 	text-align: center;
 }
 
 .user-menu p{
-	font-family: Courier; 
-	font-weight: bold; 
+	font-family: Courier;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 }
@@ -374,7 +381,7 @@ pre {
     position: relative;
     display: table;
     margin: 0 auto;
-    width: 90%; 
+    width: 90%;
 }
 .login-menu a{
     float: none;
@@ -417,7 +424,7 @@ pre {
     border-radius: 10px;
     background-color: white;
     margin-bottom: 5px;
-    left: 5px;    
+    left: 5px;
 }
 
 #prof_form input{
@@ -425,8 +432,8 @@ pre {
 }
 
 #search{
-	float:left; 
-	width: 100%; 
+	float:left;
+	width: 100%;
 	margin: 0px;
 }
 
@@ -441,7 +448,7 @@ pre {
 }
 
 .finder #finder_field{
-	
+
 }
 
 #poof_40px{
@@ -470,15 +477,15 @@ price p{
 	font-family: usual-text;
     font-weight: bold;
     font-size: 18px;
-	padding: 5px; 
-	background: #3498db; 
+	padding: 5px;
+	background: #3498db;
 	color: white;
 	border-radius: 100px;
 }
 
 .price center a:hover{
 	border-radius: 0px;
-	background: white; 
+	background: white;
 	color: #3498db;
 	transition: 0.6s;
 }
@@ -527,7 +534,7 @@ price p{
 	font-weight: bold;
 	font-size: 20px;
 	display: table;
-	margin: 0 auto;	
+	margin: 0 auto;
 	position: relative;
 }
 
@@ -617,7 +624,7 @@ price p{
 	border-radius: 20px;
 	background: #bdc3c7;
 	display: table;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .mid-title{
@@ -641,7 +648,7 @@ price p{
 	float: left;
 	position: relative;
 	width: 550px;
-	height: auto;	
+	height: auto;
 	padding-top: 15px;
 	margin-right:0px;
 	padding-bottom: 15px;
@@ -651,7 +658,7 @@ price p{
 	float: left;
 	position: relative;
 	width: 750px;
-	height: auto;	
+	height: auto;
 	padding-top: 15px;
 	margin-right:0px;
 }
@@ -702,11 +709,13 @@ price p{
     position: relative;
     display: table;
     margin: 0 auto;
-    
+
 }
 
 #news_img{
     width: 100%;
+		margin-left: 8px;
+		margin-bottom: 15px;
 }
 
 .allNews #title_date{
@@ -722,7 +731,7 @@ price p{
 	height: 829px;
 	width: 230px;
 	border: 5px solid #e74c3c;
-	border-top-left-radius: 0px; 
+	border-top-left-radius: 0px;
 	border-top-right-radius: 20px;
 }
 
@@ -775,30 +784,30 @@ price p{
 }
 
 .user-menu {
-	float: right; 
-	position: relative; 
-	margin: -70px 0px; 
+	float: right;
+	position: relative;
+	margin: -70px 0px;
 	right: 0.5%;
-	font-family: Courier; 
-	font-weight: bold; 
+	font-family: Courier;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 	width: 200px;
 	border-radius: 5px;
-	
+
 }
 
 .user-menu a{
-	font-family: Courier; 
-	font-weight: bold; 
+	font-family: Courier;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 	text-align: center;
 }
 
 .user-menu p{
-	font-family: Courier; 
-	font-weight: bold; 
+	font-family: Courier;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 }
@@ -862,7 +871,7 @@ price p{
     position: relative;
     display: table;
     margin: 0 auto;
-    width: 90%; 
+    width: 90%;
 }
 .login-menu a{
     float: none;
@@ -894,7 +903,7 @@ price p{
     background-color: white;
     margin-bottom: 5px;
     left: 120px;
-    
+
 }
 
 .ticket_window{
@@ -912,7 +921,7 @@ price p{
     border-radius: 10px;
     background-color: white;
     margin-bottom: 5px;
-    left: 5px;    
+    left: 5px;
 }
 
 #prof_form input{
@@ -920,8 +929,8 @@ price p{
 }
 
 #search{
-	float:left; 
-	width: 400px; 
+	float:left;
+	width: 400px;
 	margin: 0 5px;
 }
 
@@ -950,7 +959,7 @@ price p{
 .finder{
 	position: absolute;
 	margin-left: 220px;
-	padding-top: 10px; 
+	padding-top: 10px;
 }
 
 .finder #finder_field{
@@ -977,15 +986,15 @@ price p{
 	font-family: usual-text;
     font-weight: bold;
     font-size: 18px;
-	padding: 5px; 
-	background: #3498db; 
+	padding: 5px;
+	background: #3498db;
 	color: white;
 	border-radius: 100px;
 }
 
 .price center a:hover{
 	border-radius: 0px;
-	background: white; 
+	background: white;
 	color: #3498db;
 	transition: 0.6s;
 }

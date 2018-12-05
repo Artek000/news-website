@@ -1,39 +1,39 @@
 <?php
 	require "../db.php";
-	
+
 	$data = $_POST;
 	if (isset($data['n_create']))
 	{
 
 		$errors = array();
-		
-		if ($data['n_type'] == '') 
+
+		if ($data['n_type'] == '')
 		{
 			$errors[] = 'Введите тип новости';
 		}
 
-		if (trim($data['n_title']) == '') 
+		if (trim($data['n_title']) == '')
 		{
 			$errors[] = 'Введите Титул';
 		}
 
-		if (trim($data['n_img']) == '') 
+		if (trim($data['n_img']) == '')
 		{
 			$errors[] = 'Введите ссылку на картинку';
 		}
 
-		if ($data['n_pre'] == '') 
+		if ($data['n_pre'] == '')
 		{
 			$errors[] = 'Введите пре текст';
 		}
 
 
-		if ($data['n_text'] == '') 
+		if ($data['n_text'] == '')
 		{
 			$errors[] = 'Введите текст';
 		}
-		
-		if (R::count('news',"title = ?", array($data['n_title'])) > 0 ) 
+
+		if (R::count('news',"title = ?", array($data['n_title'])) > 0 )
 		{
 			$errors[] = 'Этот Титул занят';
 		}
@@ -47,9 +47,8 @@
 			$user->text = $data['n_text'];
 			$user->img = $data['n_img'];
 			R::store($user);
-		    
-			$text = "
-				<?php
+
+			$text = "<?php
 		           	require '../db.php';
 		        ?>
 		        <html>
@@ -62,7 +61,7 @@
 						jQuery(function(){
 		    			jQuery('.mid-img a').lightBox({imageLoading: '/images/lightbox-ico-loading.gif',imageBtnClose: '/images/lightbox-btn-close.gif',imageBtnPrev: '/images/lightbox-btn-prev.gif',imageBtnNext:'/images/lightbox-btn-next.gif'});
 						});
-					</script><div class='mid-img'><a href='".$data['n_img']."'><img src='".$data['n_img']."' id='news_img' style='margin-left: 8px; margin-bottom: 15px;'></a></div>
+					</script><div class='mid-img'><a href='".$data['n_img']."'><img src='".$data['n_img']."' id='news_img'></a></div>
 				<pre class='mid-text'>{$data['n_text']}</pre></center>
 		         </div>
 				<?php require('../mini-menu.php'); ?>
@@ -77,12 +76,12 @@
             fclose($fp);
 
             echo'<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Новость создана!</strong></div>';
-		} else 
+		} else
 		{
 			echo'<div class="alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>'.array_shift($errors).'</strong></div>';
 		}
 	}
-	
+
 ?>
 <html>
 <?php require "../header.php"; ?>
@@ -91,7 +90,7 @@
 		<div class="mid-content">
 		<h2 class="mid-title">Создание новостей</h2>
 		<p class="mid-text">
-		
+
 		<center><form method="POST" action="news-creator.php">
 		        <select name="n_type" autofocus>
 		            <option disabled selected>Выберите классификацию новости</option>
@@ -104,7 +103,7 @@
             	<textarea name="n_text" placeholder="Основной текст" value="<?php echo @$data['n_text'] ?>" style="width:500px; height:300px;" ></textarea><br><br>
             	<button type="submit" name="n_create">Создать новость</button>
         </form></center>
-		
+
                </p>
 		</div>
 		<?php include "admin-minimenu.php";?>

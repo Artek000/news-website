@@ -12,22 +12,22 @@
 
 		<form method="POST" action="index-find.php" class="finder">
 		    <div class="col-lg-6">
-			    <div class="input-group">			    
+			    <div class="input-group">
 			      <input type="text" name="n_f" class="form-control" placeholder="Что хочешь найти?" id="finder_field" />
 			      <span class="input-group-btn">
 			        <button class="btn btn-default" name="n_find" type="submit">Найти!</button>
-			      </span>			    			      
+			      </span>
 			    </div>
 			</div>
 		</form>
-		
-		<div class="mid-content"><div id="poof_40px" style="height: 40px;"></div>	            				  
-		
-		<?php 
+
+		<div class="mid-content"><div id="poof_40px" style="height: 40px;"></div>
+
+		<?php
 		    $query_allNews = mysqli_query($dbh,"SELECT id, title, img, pre_text, text, date FROM news ORDER BY id DESC");
-		    while($Row_allNews = mysqli_fetch_assoc($query_allNews)){ 
-		    $info_allNews .= '<div class="allNews"><a href="../news/news_'.$Row_allNews['id'].'.php"><p id="title_n">'.$Row_allNews['title'].'</p><img src="'.$Row_allNews['img'].'" id="news_img"><p id="text_n">'.$Row_allNews['pre_text'].'</p></a><p id="title_date">'.$Row_allNews['date'].'</p></div>';
-		    
+		    while($Row_allNews = mysqli_fetch_assoc($query_allNews)){
+		    $info_allNews .= '<div class="allNews"><a href="../news/news_'.$Row_allNews['id'].'.php"><p id="title_n">'.$Row_allNews['title'].'</p><img src="'.$Row_allNews['img'].'" id="news_img" style="margin: 0px;"><p id="text_n">'.$Row_allNews['pre_text'].'</p></a><p id="title_date">'.$Row_allNews['date'].'</p></div>';
+
 		    /*$text = "
 		    <?php
             	require '../db.php';
@@ -50,14 +50,14 @@
 	</div>
             </body>
         	</html>";
-            	
+
             $fp = fopen("./news/news_{$Row_allNews['id']}.php", "w");
             fwrite($fp, $text);
             fclose($fp);*/
 		    }
 		    echo $info_allNews;
-		?>	
-        
+		?>
+
 		</div></center>
 		<?php require("mini-menu.php"); ?>
 	</div>

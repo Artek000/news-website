@@ -35,35 +35,14 @@
                 <html>
                     <head><title>Заявка №{$Row_allTickets['id']}</title><link rel='stylesheet' type='text/css' href='../msg_css.css' /></head>
                     <?php include('../../header.php'); ?>
-                    <style type='text/css'>
-                        #dot0{display: none;}
-                        #dot1{display: none;}
-                        #dot2{display: none;}
-                        #dot3{display: none;}
-                        #dot4{display: none;}
-                        #dot5{display: none;}
-                        #dot6{display: none;}
-                        #dot7{display: none;}
-                        #dot8{display: none;}
-                        #dot9{display: none;}
-                        #dot10{display: none;}
-                        #dot11{display: none;}
-                        #dot12{display: none;}
-                        #dot13{display: none;}
-                        #dot14{display: none;}
-                        #dot15{display: none;}
-                        #dot16{display: none;}
-                        #dot17{display: none;}
-                        #dot18{display: none;}
-                        #dot19{display: none;}
-                    </style>
+
                     <div class='content'>
-                        <div class='mid-content' style='width: 100%;  min-height: 1000px;'>         
+                        <div class='mid-content' style='width: 100%;  min-height: 500px;'>         
                             <h2 class='mid-title'>Заявка №<?php echo '".$Row_allTickets['id']."'; ?></h2>
 
                                 <div class='well' id='user'>".$Row_allTickets['text']."</div>
 
-                                <div style='float: left; height: 50px; width: 1010px; position:fixed; bottom:15px;'>
+                                <div class='enter_msg_panel'>
                                 <div class='panel panel-default'>
                                   <div class='panel-body'>
                                     <form method='POST' action=''>
@@ -90,7 +69,7 @@
                 fclose($fp);
                 }
                 echo "<script>alert('Заявка отправлена!')</script>";
-            } else {echo "ewwwq";}
+            } else {echo "<script>alert('Ошибка отправки заброса. Повторите попытку')</script>";}
         } else 
         {
             echo"<script>alert('".array_shift($errors)."')</script>";

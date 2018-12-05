@@ -1,3 +1,24 @@
+#dot0{display: none;}
+#dot1{display: none;}
+#dot2{display: none;}
+#dot3{display: none;}
+#dot4{display: none;}
+#dot5{display: none;}
+#dot6{display: none;}
+#dot7{display: none;}
+#dot8{display: none;}
+#dot9{display: none;}
+#dot10{display: none;}
+#dot11{display: none;}
+#dot12{display: none;}
+#dot13{display: none;}
+#dot14{display: none;}
+#dot15{display: none;}
+#dot16{display: none;}
+#dot17{display: none;}
+#dot18{display: none;}
+#dot19{display: none;}
+
 #user{
 	float: left;
 	text-align: left;
@@ -12,4 +33,13 @@
 	min-width: 10%;
 	max-width: 60%;
 	margin-right: 15px;
+}
+
+.enter_msg_panel{
+	float: left;
+	height: 50px;
+	min-width: 1010px;
+	max-width: 1020px;
+	position:fixed;
+	bottom:15px;
 }

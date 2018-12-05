@@ -23,5 +23,5 @@ $(document).ready(function(){
 		  	},
 		});
 	}
-	setInterval (loadLog, 100);
+	setInterval (loadLog, 300);
 });

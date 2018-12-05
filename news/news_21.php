@@ -1,5 +1,4 @@
-
-				<?php
+<?php
 		           	require '../db.php';
 		        ?>
 		        <html>
@@ -12,7 +11,7 @@
 						jQuery(function(){
 		    			jQuery('.mid-img a').lightBox({imageLoading: '/images/lightbox-ico-loading.gif',imageBtnClose: '/images/lightbox-btn-close.gif',imageBtnPrev: '/images/lightbox-btn-prev.gif',imageBtnNext:'/images/lightbox-btn-next.gif'});
 						});
-					</script><div class='mid-img'><a href='https://games.mail.ru/pre_1000x515_crop/pic/pc/article/2017/2/a004ae0.jpeg'><img src='https://games.mail.ru/pre_1000x515_crop/pic/pc/article/2017/2/a004ae0.jpeg' id='news_img' style='margin-left: 8px; margin-bottom: 15px;'></a></div>
+					</script><div class='mid-img'><a href='https://games.mail.ru/pre_1000x515_crop/pic/pc/article/2017/2/a004ae0.jpeg'><img src='https://games.mail.ru/pre_1000x515_crop/pic/pc/article/2017/2/a004ae0.jpeg' id='news_img'></a></div>
 				<pre class='mid-text'>В новинке Ubisoft For Honor на одном поле боя сходятся рыцари, викинги и самураи. В реальности они почти не сталкивались друг с другом — их разделяли сотни лет и тысячи километров. Однако все они прославили себя в истории и оставили след в мировой культуре.
 
 Конь и копье.
